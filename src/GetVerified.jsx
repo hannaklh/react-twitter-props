@@ -40,7 +40,7 @@ function Right() {
                             <i className="fa-solid fa-ellipsis"></i>
                         </div>
                     </div>
-                </div>
+                    </div>
 
                 <div className='widget'>
                     <h1>Who to follow</h1>

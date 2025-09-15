@@ -1,4 +1,4 @@
-function Left({loggedInUser}) {
+function Left() {
 
     return (
  <>
@@ -63,27 +63,8 @@ function Left({loggedInUser}) {
                     </a>
                 </div>
 
-                <div className="menu-item">
-                    <a href="#">
-                        <i className="fa-solid fa-ellipsis"></i>
-                        More
-                    </a>
-                </div>
 
-                <button className="tweet-btn">Tweet</button>
 
-                <div className='profile-card'>
-                    <div className="profile-icon"><img src={loggedInUser.profileImage}/></div>
-
-                    <div className="profile-details">
-                        <h4>{loggedInUser.name}</h4>
-                        <small>{loggedInUser.handle}</small>
-                    </div>
-
-                    <div className="action">
-                        <i className="fa-solid fa-ellipsis"></i>
-                    </div>
-                </div>
                 </>
 
     )
