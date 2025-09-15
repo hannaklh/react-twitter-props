@@ -5,11 +5,6 @@ import imgZuck from './assets/images/zuck.jpg'
 function Right() {
     return (
         <>
-    <div className='search-section'>
-                    <i className="fa-solid fa-magnifying-glass search-icon"></i>
-                    <input className="search" type="text" placeholder="Search Twitter" />
-                </div>
-
                 <div className='widget'>
                     <div className="widget-grid">
                         <h1>Get Verified</h1>

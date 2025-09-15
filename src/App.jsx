@@ -3,6 +3,7 @@ import Left from './Left.jsx'
 import Right from './Right.jsx'
 import Middle from './Middle.jsx'
 import Tweets from './Tweets.jsx'
+import SearchTweet from './SearchTweet.jsx'
 
 // The initial tweet objects that should be displayed
 import initialTweets from './assets/data/tweets.js'
@@ -34,6 +35,16 @@ function App() {
         setCreateTweetContent('')
     }
 
+    const filterTweets = (inputText) => {
+        
+        if (inputText.length < 1) {
+            setTweets(initialTweets)
+            return
+        }
+        setTweets(allTweets => allTweets.filter(tweet => tweet.content.toLowerCase().includes(inputText.toLowerCase())))}
+        
+    
+
     return (
         <div className="container">
             <aside className="left-side">
@@ -53,6 +64,7 @@ function App() {
                 </main>
 
             <aside className='right-side'>
+                <SearchTweet onChange={(event => filterTweets(event.target.value))}/>
                 <Right />
             </aside>
             </div>
